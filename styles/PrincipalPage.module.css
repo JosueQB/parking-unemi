@@ -1,0 +1,453 @@
+.infoApp {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    max-width: 450px;
+    font-size: 40px;
+    margin: 30px 0;
+    color: var(--text-color);
+}
+
+
+/* Styles for the section */
+.section {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    padding: 50px 20px;
+    border-bottom-left-radius: 100% 50%; /* Añadido para redondear las esquinas inferiores */
+    border-bottom-right-radius: 100% 50%; /* Añadido para redondear las esquinas inferiores */
+}
+
+.sectionContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.sectionText {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    font-size: 1.5rem;
+    color: #347571;
+}
+
+.sectionText p {
+    margin: 20px 0;
+}
+
+.startButton {
+    background-color: var(--seven-color);
+    color: white;  
+    border: none;
+    font-size: 14px;
+    padding: 0.5em 1em;
+    border-radius: 28px;
+    cursor: pointer;
+    filter: brightness(130%);
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.startButton img {
+    margin-right: 10px;
+}
+
+.sectionImage {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionImage Image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .sectionContent {
+        flex-direction: column;
+    }
+
+    .sectionText {
+        text-align: center;
+    }
+
+    .startButton {
+        margin-top: 20px;
+    }
+}
+
+.horizontal-padding {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.vertical-padding {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+@media (min-width: 950px) {
+    .horizontal-padding {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .vertical-padding {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para la sección de parqueaderos */
+.section2 {
+    margin-top:0rem; /* mt-20 */
+    width: 100%; /* w-full */
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    align-items: center; /* items-center */
+    background-color: #ffffff; /* bg-white */
+    padding: 2rem; /* padding for the section */
+}
+
+.section2 h2 {
+    font-size: 1.875rem; /* text-3xl */
+    margin-bottom: 2.5rem; /* mb-10 */
+    color: var(--five-color);
+    font-weight: bold; /* Aplica negrita al texto cuando está seleccionado o en hover */
+    text-align: center;
+}
+
+.section2 .content {
+    width: 100%; /* w-full */
+    max-width: 72rem; /* max-w-6xl */
+    display: grid; /* grid */
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* grid-cols-2 */
+    gap: 4rem; /* gap-16 */
+    padding: 2rem; /* p-8 */
+}
+
+.section2 .card {
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    align-items: center; /* items-center */
+}
+
+.section2 .card h3 {
+    font-size: 1.25rem; /* text-xl */
+    color: #0d9488; /* text-teal-900 */
+    margin-top: 1.25rem; /* mt-5 */
+}
+
+.section2 .card p {
+    color: #000000; /* text-gray-700 */
+    margin-top: 0.5rem; /* mt-2 */
+    text-align: justify; /* text-justify */
+}
+
+/* Adaptación responsive */
+@media (max-width: 768px) {
+    .section2 .content {
+        grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
+        gap: 2rem; /* Reducir el espacio entre las tarjetas */
+    }
+
+    .section2 h2 {
+        text-align: center; /* Centrar el título */
+    }
+}
+
+
+
+
+
+
+
+
+/* Estilo para la sección de servicios */
+.section3 {
+    margin-top: 0rem; /* mt-20 */
+    width: 100%; /* w-full */
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    align-items: center; /* items-center */
+    background-color: #ffffff; /* bg-white */
+    padding: 2rem; /* padding for the section */
+}
+
+.section3 h2 {
+    font-size: 1.875rem; /* text-3xl */
+    margin-bottom: 2.5rem; /* mb-10 */
+    color: var(--five-color);
+    font-weight: bold; /* Aplica negrita al texto cuando está seleccionado o en hover */
+    text-align: center;
+}
+
+.section3 .content {
+    width: 100%; /* w-full */
+    max-width: 72rem; /* max-w-6xl */
+    display: grid; /* grid */
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* grid-cols-2 */
+    gap: 4rem; /* gap-16 */
+    padding: 2rem; /* p-8 */
+}
+
+.section3 .card {
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    align-items: center; /* items-center */
+    justify-content: center;
+    background-color: var(--primary-color); 
+    padding: 2rem; /* p-8 */
+    border-radius: 0.5rem; /* rounded-lg */
+    text-align: center;
+    transition: transform 0.3s ease; /* Animación de expansión */
+    min-height: 300px; /* Asegura que todas las tarjetas tengan la misma altura mínima */
+}
+
+.section3 .card:hover {
+    transform: scale(1.05); /* Efecto de expansión */
+}
+
+.section3 .card h3 {
+    font-size: 1.25rem; /* text-xl */
+    color: var(--secondary-color); /* text-teal-900 */
+    margin-top: 1.25rem; /* mt-5 */
+    font-weight: bold;
+}
+
+.section3 .card p {
+    color: #ffffff; /* text-gray-700 */
+    margin-top: 0.5rem; /* mt-2 */
+    text-align: center; /* text-center */
+}
+
+/* Adaptación responsive */
+@media (max-width: 768px) {
+    .section3 .content {
+        grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
+        gap: 2rem; /* Reducir el espacio entre las tarjetas */
+    }
+
+    .section3 h2 {
+        text-align: center; /* Centrar el título */
+    }
+}
+
+
+
+
+
+
+
+
+/* Estilo para la sección de retricciones*/
+.section4 {
+    margin-top: 1rem; /* mt-20 */
+    width: 100%; /* w-full */
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    align-items: center; /* items-center */
+    background-color: #ffffff; /* bg-white */
+    padding: 2rem; /* padding for the section */
+  }
+  
+  .section4 h2 {
+    font-size: 1.875rem; /* text-3xl */
+    color: #30B290; /* Color verde similar al de la imagen */
+    margin-bottom: 2.5rem; /* mb-10 */
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .section4 .restriccionesContent {
+    width: 100%; /* w-full */
+    max-width: 72rem; /* max-w-6xl */
+    display: flex; /* flex */
+    padding: 2rem; /* p-8 */
+    align-items: flex-start; /* align-items-start */
+  }
+  
+  .section4 .restriccionItem {
+    display: flex; /* flex */
+    flex-direction: row; /* flex-row */
+    gap: 1rem; /* gap between elements */
+  }
+  
+  .section4 .restriccionItem h3 {
+    font-size: 1.25rem; /* text-xl */
+    color: var(--four-color); /* Color verde similar al de la imagen */
+    margin-top: 0; /* mt-0 */
+    font-weight: bold;
+    white-space: nowrap; /* Prevent line break */
+  }
+  
+  .section4 .restriccionItem p {
+    color: var(--text-color); /* Color verde similar al de la imagen */
+    margin-top: 0; /* mt-0 */
+    text-align: justify; /* text-justify */
+    max-width: 600px;
+  }
+  
+  /* Adaptación responsive */
+  @media (max-width: 768px) {
+    .section4 {
+      padding: 1rem; /* Reducir el padding en dispositivos móviles */
+    }
+  
+    .section4 h2 {
+      font-size: 1.5rem; /* Reducir el tamaño del texto en dispositivos móviles */
+    }
+  
+    .section4 .restriccionesContent {
+      flex-direction: column; /* flex-col */
+      padding: 1rem; /* Reducir el padding en dispositivos móviles */
+      gap: 1rem; /* Reducir el gap en dispositivos móviles */
+    }
+  
+    .section4 .restriccionItem {
+      flex-direction: column; /* flex-col en móviles */
+      align-items: flex-start; /* Alinear al inicio en móviles */
+    }
+  
+    .section4 .restriccionItem h3 {
+      font-size: 1rem; /* Reducir el tamaño del texto en dispositivos móviles */
+    }
+  
+    .section4 .restriccionItem p {
+      font-size: 0.875rem; /* Reducir el tamaño del texto en dispositivos móviles */
+    }
+  }
+  
+
+  /* Estilo para la sección de misión*/
+  .section5 {
+    margin-top: 1rem; /* mt-20 */
+    width: 100%; /* w-full */
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    align-items: center; /* items-center */
+    background-color: #ffffff; /* bg-white */
+    padding: 2rem; /* padding for the section */
+  }
+  
+  .section5 h2 {
+    font-size: 2rem; /* text-2xl */
+    color: #30B290; /* Color verde similar al de la imagen */
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .section5 .misionContainer {
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    align-items: center; /* items-center */
+    text-align: center;
+  }
+  
+  .section5 .misionText {
+    text-align: center; /* text-center */
+    margin-top: 2rem; /* mt-8 */
+  }
+  
+  .section5 .misionText h2 {
+    font-size: 2rem; /* text-2xl */
+    color: #30B290; /* Color verde similar al de la imagen */
+  }
+  
+  .section5 h3 {
+    font-size: 2rem; /* text-2xl */
+    color: var(--primary-color); /* Color verde similar al de la imagen */
+    text-align: center;
+    font-weight: bold;
+  }
+
+
+  .section5 .misionText p {
+    font-weight: 500;
+    line-height: 1.3;
+    max-width: 1000px;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    
+  }
+  
+  /* Adaptación responsive */
+  @media (max-width: 768px) {
+    .section5 {
+      padding: 1rem; /* Reducir el padding en dispositivos móviles */
+    }
+  
+    .section5 h2 {
+      font-size: 1.5rem; /* Reducir el tamaño del texto en dispositivos móviles */
+    }
+  
+    .section5 .misionText h2 {
+      font-size: 1.5rem; /* Reducir el tamaño del texto en dispositivos móviles */
+    }
+  
+    .section5 .misionText p {
+      font-size: 1rem; /* Reducir el tamaño del texto en dispositivos móviles */
+    }
+  }
+  
+
+
+
+
+  .footerContainer {
+    margin-top: 3rem; /* mt-20 */
+    width: 100%; /* w-full */
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    align-items: center; /* items-center */
+    background-color: var(--secondary-color); /* bg-yellow-400 */
+    color: #0d9488; /* text-teal-900 */
+    font-size: 1.25rem; /* text-xl */
+    padding: 1rem;
+    position: relative;
+    clip-path: ellipse(70% 100% at 50% 100%);
+    text-align: center;
+  }
+  
+  .footerContainer p {
+    margin: 0;
+    color: black;
+  }
+  
+  @media (max-width: 768px) {
+    .footerContainer {
+      padding: 1rem;
+    }
+  
+    .footerContainer p {
+      font-size: 1rem;
+    }
+  }
+  

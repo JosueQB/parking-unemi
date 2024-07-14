@@ -1,0 +1,29 @@
+/* Global Styles */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --primary-color: #003366; /* Navy Blue */
+  --secondary-color: #facc15; /* Orange */
+  --three-color: #b9a38b; /* Light Gray */
+  --four-color:#fd7e14;
+  --five-color:#66c88f;
+  --sixth-color:#245a80;
+  --seven-color: #1f2937;
+  --background-color: #ffffff; /* White */
+  --text-color: #000000; /* Dark Gray */
+  --text-light-color: #7b7878; /* Light Gray */
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  font-family:'Montserrat', sans-serif;
+}
+
+

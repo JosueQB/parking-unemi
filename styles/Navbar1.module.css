@@ -1,0 +1,141 @@
+.topheader {
+  box-shadow: 0 4px 5px var(--three-color);
+  position: fixed;
+  background-color: var(--background-color);
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Alinea los elementos verticalmente */
+  padding: 10px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+
+
+/* Menu */
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  flex: 1; /* Esto hará que el menú ocupe el espacio disponible y esté centrado */
+}
+
+.menu li {
+  padding: 0 15px;
+}
+
+.menu span {
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 50px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.menu span::after {
+  content: "";
+  background-color: var(--three-color);
+  position: absolute;
+  left: 0;
+  top: calc(100% + 4px);
+  width: 100%;
+  height: 4px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.menu span:hover::after,
+.menu span.selected::after {
+  opacity: 0.8;
+
+}
+
+.menu span:hover {
+  color: var(--five-color);
+}
+
+.menu span:hover,
+.menu span.selected {
+  color: var(--text-color);
+  font-weight: bold; /* Aplica negrita al texto cuando está seleccionado o en hover */
+}
+
+
+.openMenu,
+.closeMenu {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 950px) {
+  /* Menu */
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: var(--secondary-color);
+    height: 100%;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+
+  .menu li {
+    padding: 0;
+  }
+
+  .menu span {
+    color: var(--text-color-inverse);
+    line-height: 70px;
+    font-size: 25px;
+  }
+
+  .openMenu,
+  .closeMenu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .closeMenu {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  .menu_opened {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .openMenu:focus:not(:focus-visible),
+  .closeMenu:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  .menu span::after {
+    content: none;
+  }
+
+  .menu span:hover,
+  .menu span.selected {
+    color: var(--background-color);
+  }
+}
