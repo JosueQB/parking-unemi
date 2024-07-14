@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import clientPromise from '../../../lib/mongodb'
-import FormattedDate from '../../components/FormattedDate'
-import Navbar from '../../components/navbar'
+import FormattedDate from '../../../components/FormattedDate'
+import Navbar from '../../../components/navbar'
 export async function getServerSideProps(context) {
   const client = await clientPromise
   const db = client.db('db_unemi_parking')
